@@ -1,0 +1,6 @@
+
+p= "Hi #{@fellow.name},"
+p Amazing! Now we are just need you to click on the link to confirm your account.
+
+p style='text-align: center'
+  = link_to 'Key to unlock ditty lobby', confirmations_url(confirmation_token: @fellow.confirmation_token), style: 'display: inline-block;padding: 6px 12px;margin-bottom: 0;text-align: center;vertical-align: middle;border: 1px solid transparent;border-radius: 4px;color: #ffffff;background-color: #5cb85c;border-color: #4cae4c;text-decoration: none'

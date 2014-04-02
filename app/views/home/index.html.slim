@@ -1,0 +1,14 @@
+- content_for :title, 'Ditty Lobby'
+
+.container
+  .index-left
+    - flash.each do |(k,v)|
+      = v
+    div
+      'Left side Data
+  .index-right
+    .sign-in
+      = render 'sign_in_form'
+    .sign-up
+      = render 'sign_up_form'
+

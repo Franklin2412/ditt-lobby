@@ -1,0 +1,26 @@
+- content_for :title, 'Show'
+
+div
+
+  p profile page
+  p = @fellow.name
+  p = @fellow.about_me
+  p = link_to 'Logout', :delete_fellow_session, method: :delete
+  p = link_to 'Settings', edit_fellow_path
+  p = link_to 'Browse fellows', :fellows
+  p = link_to 'Browse Songs', :songs
+  /p = link_to 'Make Song', new_song_path if @fellow.gift.song_writer?
+  - if @fellow.gift
+    p = 'Keyboard' if @fellow.gift.keyboard?
+    p = 'Guitar' if @fellow.gift.guitar?
+    p = 'Tabla' if @fellow.gift.tabla?
+    p = 'Singing' if @fellow.gift.singer?
+    p = 'Song writing' if @fellow.gift.song_writer?
+    p = 'Drum set' if @fellow.gift.drum_set?
+    p = 'Flute' if @fellow.gift.flute?
+    p = 'Trumpet' if @fellow.gift.trumpet?
+    p = 'Violin' if @fellow.gift.violin?
+
+
+
+

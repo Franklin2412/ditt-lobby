@@ -1,0 +1,63 @@
+- content_for :title, 'Settings'
+
+= form_for @fellow do |f|
+  p
+    = f.label :name
+    = f.text_field :name
+  p
+    = f.label :email
+    = f.email_field :email
+  p
+    = f.label :about_me
+    = f.text_area :about_me
+  p
+    = f.label :region
+    = f.text_field :region
+  p
+    = f.label :password
+    = f.password_field :password
+  p
+    = f.label :password_confirmation
+    = f.password_field :password_confirmation
+  p
+    ' Gender
+    = f.label :male
+    = f.radio_button :gender, 'male'
+    = f.label :female
+    = f.radio_button :gender, 'female'
+    = f.label :robot
+    = f.radio_button :gender, 'robot'
+  p
+    ' Gifts
+  p
+    = label_tag :keyboard
+    = check_box_tag :keyboard
+  p
+    = label_tag :guitar
+    = check_box_tag :guitar
+  p
+    = label_tag :tabla
+    = check_box_tag :tabla
+  p
+    = label_tag :singer
+    = check_box_tag :singer
+  p
+    = label_tag :song_writer
+    = check_box_tag :song_writer
+  p
+    = label_tag :drum_set
+    = check_box_tag :drum_set
+  p
+    = label_tag :flute
+    = check_box_tag :flute
+  p
+    = label_tag :trumpet
+    = check_box_tag :trumpet
+  p
+    = label_tag :violin
+    = check_box_tag :violin
+  p
+    = label_tag :current_password
+    = password_field_tag :current_password
+  p
+    = f.submit "Save changes"

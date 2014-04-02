@@ -1,0 +1,5 @@
+- content_for :title, 'Songs List'
+
+- @songs.each do  |song|
+  p
+    = link_to song.title, song_path(song)

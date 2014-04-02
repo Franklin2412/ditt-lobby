@@ -1,0 +1,10 @@
+
+= form_for @fellow,url: fellows_path do |f|
+  fieldset
+    legend Sign up
+
+    = f.text_field :name, placeholder: 'Full Name', required: true
+    = f.email_field :email, placeholder: 'Email address', required: true
+    = f.password_field :password, placeholder: 'Password', required: true
+    = f.password_field :password_confirmation, placeholder: 'Retype password', required: true
+    = f.submit 'Sign up', class: 'btn'

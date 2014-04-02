@@ -1,0 +1,55 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+fieldset {
+  border: 2px #af3333 solid;
+  border-radius: 10px;
+  width: 60%;
+  margin-left: 17%;
+  overflow: hidden;
+}
+
+.container {
+  background-color: #336E7B;
+  display: flex;
+  display: -webkit-flex;
+  -webkit-flex-flow: row;
+  flex-flow: row;
+  min-height: 700px;
+}
+
+.index-right {
+  flex: 30%;
+  -webkit-flex: 30%;
+  order: 2;
+  -webkit-order: 2;
+  background-color: #2E2F30;
+  opacity: 0.9;
+  color: white;
+}
+
+.index-left {
+  flex: 70%;
+  -webkit-flex: 70%;
+  order: 2;
+  -webkit-order: 2;
+}
+
+.sign-in {
+  margin-top: 30px;
+}
+
+.sign-up {
+  margin-top: 30px;
+}
+
+.index-right input {
+  padding: 5px;
+  margin: 10px 30px;
+}

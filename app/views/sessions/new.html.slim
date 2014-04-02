@@ -1,0 +1,12 @@
+- content_for :title, 'Sign in'
+
+h4 Login to your account
+
+= form_for(@fellow, url: :sign_in, method: 'POST') do |f|
+  = f.label :email
+  = f.email_field :email, placeholder: 'Username (email)'
+  = f.label :password
+  = f.password_field :password
+  = f.submit 'Sign in'
+
+= link_to 'Create one for free', new_fellow_path

@@ -1,0 +1,23 @@
+- content_for :title, 'New Song'
+
+= form_for @song do |f|
+  p
+    = f.label :title
+    = f.text_field :title
+  p
+    = f.label :lyrics
+    = f.text_area :lyrics
+  p
+    = f.label :language
+    = f.text_field :language
+  p
+    = f.label :type
+    = f.text_field :type
+  p
+    = f.label :reference
+    = f.text_field :reference
+  p
+    = label_tag :comment
+    = text_field_tag :comment
+  p
+    = f.submit
